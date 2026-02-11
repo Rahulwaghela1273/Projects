@@ -1,17 +1,15 @@
-//import './App.css'
-import { HeaderComponent } from "./Components/HeaderComponent";
-import FavPlayer from "./Components/FavPlayer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Navbar } from "./components/Navbar";
+import FormDemo1 from "./components/form/FormDemo1";
+
 function App() {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#f2f2f2",
-      }}>
-      <FavPlayer />
+    <div>
+      <Navbar />
+
+      <Routes>
+        <Route path="/formdemo1" element={<FormDemo1 />}></Route>
+      </Routes>
     </div>
   );
 }
