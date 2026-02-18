@@ -21,6 +21,11 @@ export const Navbar = () => {
                 ApiDemo1
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/movielist">
+                MovieList
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
